@@ -41,7 +41,7 @@ public class MyAuth
         }
 
         // Continue to the next middleware if credentials are valid
-        await context.Response.WriteAsync($"Username: {username}\n");
+        //await context.Response.WriteAsync($"Username: {username}\n");
         await _next(context);
     }
 
